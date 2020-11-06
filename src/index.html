@@ -6,27 +6,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <div id="root">
-      <h1>Hello world!</h1>
-    </div> -->
-
-    <h1>Cifra de César</h1>
-
     <header>
-      <p>Aqui você poderá codificar e/ou decodificar mensagens etc etc etc -- vou pensar em um texto melhor em breve...</p>
-      <p>* * *</p>
+      <img src="img/lost-star.png" alt="Lost Star">
     </header>
     
     <main>
-      <section>
-        <label for="msg">Digite sua mensagem aqui</label><br>
-        <textarea id="msg" cols="45" rows="7" placeholder="Não utilize caracteres numéricos ou especiais (espaços, acentos, pontuação etc.)"></textarea><br><br>
-        <label for="offset-key">Chave de deslocamento</label><br>
-        <input type="number" id="offset-key" placeholder="Digite um número"><br><br>
-        <button id="btn-enc" class="btn">CODIFICAR</button>
-        <button id="btn-dec" class="btn">DECODIFICAR</button><br><br>
-        <div id="final-msg"></div>
-      </section>
+      <div id="container">
+        <div id="description" class="box">
+          <p>Saudações, jovem Padawan!</p>
+          <p>Agora que você está em treinamento para tornar-se um cavaleiro Jedi, é importante que você compreenda que algumas informações devem ser mantidas sob sigilo.</p>
+          <p>Sendo assim, caso seja necessário comunicar-se com seu Mestre por meios escritos, certifique-se de codificar sua mensagem antes de enviá-la.</p>
+          <p>Se tiver recebido uma mensagem codificada, você poderá também decodificá-la por aqui.</p>
+          <p>E lembre-se de informar a chave ao destinatário de sua mensagem ou de solicitá-la a quem enviou mensagem a você, pois somente a chave correta revelará seu conteúdo original.</p>
+          <p>Que a força esteja com você!</p>
+        </div>
+        <div id="data" class="box">
+          <div>
+            <label for="msg">Mensagem:</label><br>
+            <textarea id="msg" cols="35" rows="6" placeholder="Digite sua mensagem aqui..."></textarea><br>
+            <label for="offset-key">Chave de deslocamento:</label><br>
+            <input type="number" id="offset-key" placeholder="Digite um número"><br>
+          </div>  
+          <div>
+            <button id="btn-enc" class="btn">CODIFICAR</button>
+            <button id="btn-dec" class="btn">DECODIFICAR</button><br>
+          </div>
+          <div id="final-msg"></div><br>
+          <!--
+          <div>
+            <button id="btn-reset" class="btn">LIMPAR</button>
+            <button id="btn-copy" class="btn">COPIAR</button>
+          </div>
+          -->
+        </div>
+      </div>
     </main>
 
     <script src="index.js" type="module"></script>
