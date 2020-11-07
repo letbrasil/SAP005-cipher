@@ -34,7 +34,7 @@ em mãos erradas.
 
 ## 3. Usuários
 
-Destinado aos _Padawans_ (jovens que estão em treinamento para um dia serem Cavaleiros
+Destinado aos _Padawans_ (jovens que estão em treinamento para um dia se tornarem Cavaleiros
 Jedi) que necessitem tratar de assuntos relacionados à Ordem Jedi e à Força por via escrita. 
 Para manter o conteúdo de suas mensagens em segurança, Padawans e Cavaleiros (e, em alguns 
 casos, Mestres Jedi) utilizam esta aplicação para codificar/decodifcar mensagens e evitar
@@ -51,11 +51,11 @@ clicando [aqui](https://letbrasil.github.io/SAP005-cipher/src/)!
 * digite sua mensagem;
 * escolha um número para a chave de deslocamento;
 * clique no botão **CODIFICAR**;
-* a mensagem codificada será exibida no campo logo abaixo.
+* a mensagem codificada será exibida no último campo.
 
 ### Para decodificar:
 
-* digite a mensagem recebida e já codificada;
+* digite a mensagem recebida (codificada anteriormente);
 * digite o número da chave de deslocamento utilizada para a codificação;
 * clique no botão **DECODIFICAR**;
 * a mensagem original será exibida. 
@@ -80,20 +80,22 @@ INÍCIO ──> MENSAGEM DIGITADA ──> DESLOCAMENTO ──│                
 
 ### Interface
 
-Com base no fluxograma, desenhei a interface inicial:
+Com base no fluxograma, desenhei a **interface inicial**:
 
 ![prototipo](src/img/prototipo.jpg)
 
 Pensando na facilidade de uso e entendimento, optei por uma interface simples, 
-com apenas 2 campos de entrada (mensagem original e deslocamento), 1 campo de saída 
-(mensagem cifrada ou decifrada) e 2 botões ("CODIFICAR" e "DECODIFICAR").
+com apenas **2 campos de entrada** (mensagem original e deslocamento), **1 campo de saída** 
+(mensagem cifrada ou decifrada) e **2 botões** ("CODIFICAR" e "DECODIFICAR").
 
-Durante o processo de estilização, um texto foi escrito para dar imersão ao tema. 
-aos poucos a página foi tomando forma e esta é a interface final:
+Durante o processo de estilização, um segundo box foi adicionado para incluir na página 
+um texto escrito para proporcionar maior imersão ao tema. 
+
+Aos poucos a página foi tomando forma e esta é a **interface final**:
 
 ![interface-final](src/img/lost-star-final.png)
 
 ## 6. Considerações gerais
 
-* Para o desenvolvimento deste projeto foram usados HTML, CSS e JavaScript.
+* Para o desenvolvimento deste projeto foram utilizados **HTML**, **CSS** e **JavaScript**.
 * Projeto proposto no _bootcamp_ Laboratoria.
