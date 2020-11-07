@@ -9,15 +9,12 @@ const cipher = {
       throw new TypeError("ERRO: Campos não preenchidos ou deslocamento 0(zero)");
     } else {
       for (let p = 0; p < yourMsg.length; p++) {
-        const initialAscii = yourMsg.charCodeAt(p); // código ASCII da letra inserida sem deslocamento
-        if (initialAscii >= 65 && initialAscii <=90) {
-          const newAscii = (((initialAscii + asciiLetterA + offset) % abcLength) + asciiLetterA); // código ASCII da letra após deslocamento
-          const showLetter = String.fromCharCode(newAscii);
-          finalMsg += showLetter;
+        const origAscii = yourMsg.charCodeAt(p); // código ASCII da letra inserida sem deslocamento
+        if (origAscii >= 65 && origAscii <= 90) {
+          const newAscii = (((origAscii + asciiLetterA + offset) % abcLength) + asciiLetterA); // código ASCII da letra após deslocamento
+          finalMsg += String.fromCharCode(newAscii);
         } else {
-          const newAscii = initialAscii;
-          const showLetter = String.fromCharCode(newAscii);
-          finalMsg += showLetter;
+          finalMsg += String.fromCharCode(origAscii);
         }
       }
       return finalMsg;
@@ -33,15 +30,12 @@ const cipher = {
       throw new TypeError("ERRO: Campos não preenchidos ou deslocamento 0(zero)");
     } else {
       for (let p = 0; p < yourMsg.length; p++) {
-        const initialAscii = yourMsg.charCodeAt(p); // código ASCII da letra inserida sem deslocamento
-        if (initialAscii >= 65 && initialAscii <=90) {
-          const newAscii = (((initialAscii + asciiLetterA - offset) % abcLength) + asciiLetterA); // código ASCII da letra após deslocamento
-          const showLetter = String.fromCharCode(newAscii);
-          finalMsg += showLetter;
+        const origAscii = yourMsg.charCodeAt(p); // código ASCII da letra inserida sem deslocamento
+        if (origAscii >= 65 && origAscii <= 90) {
+          const newAscii = (((origAscii + asciiLetterA - offset) % abcLength) + asciiLetterA); // código ASCII da letra após deslocamento
+          finalMsg += String.fromCharCode(newAscii);
         } else {
-          const newAscii = initialAscii;
-          const showLetter = String.fromCharCode(newAscii);
-          finalMsg += showLetter;
+          finalMsg += String.fromCharCode(origAscii);
         }
       }
       return finalMsg;

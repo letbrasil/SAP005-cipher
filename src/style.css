@@ -19,9 +19,9 @@ header {
     vertical-align: top;
     border-radius: 5px;
     border: solid 2px white;
-    padding: 60px 50px;
+    padding: 50px 50px;
     width: 350px;
-    height: 500px;
+    height: 550px;
     margin: 50px;
 }
 
@@ -41,14 +41,14 @@ label {
 #msg{
     background-color: lightsteelblue;
     margin-top: 5pt;
-    margin-bottom: 15pt;
+    margin-bottom: 30pt;
     font-size: 11pt;
 }
 
 #offset-key {
     text-align: center;
     margin-top: 5pt;
-    margin-bottom: 20pt;
+    margin-bottom: 30pt;
 }
 
 .btn {
@@ -62,7 +62,7 @@ label {
 #final-msg {
     background-color: lightsteelblue;
     color: black;
-    margin: 20pt auto;
+    margin: 40pt auto;
     width: 300px;
     height: 150px;
     word-wrap: break-word;
@@ -70,4 +70,13 @@ label {
     padding: 10px 10px;
     border-radius: 15px;
     text-align: left;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.link {
+    color: lightsteelblue;
 }
